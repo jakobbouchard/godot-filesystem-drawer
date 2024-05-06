@@ -22,8 +22,8 @@ var _open: bool = false
 func _enter_tree() -> void:
 	set_process(false)
 	set_process_input(false)
-	CONFIG_FILEPATH = EditorInterface.get_editor_paths().get_config_dir() + CONFIG_FILENAME
-	_filesystem = self.get_editor_interface().get_file_system_dock()
+	CONFIG_FILEPATH = get_editor_interface().get_editor_paths().get_config_dir() + CONFIG_FILENAME
+	_filesystem = get_editor_interface().get_file_system_dock()
 	# TODO: Get rid of this somehow?
 	await get_tree().create_timer(0.1).timeout
 	
