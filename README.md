@@ -2,16 +2,26 @@
 
 A simple plugin for the Godot editor that moves the **FileSystem** dock to the bottom of the editor, similar to Unreal Engine's Asset Drawer. Click on the **FileSystem** button at the bottom of the window or use <kbd>Ctrl</kbd>+<kbd>Space</kbd> to open it. Inspired by [@newjoker6's plugin](https://github.com/newjoker6/Asset-Drawer/).
 
+![godot editor, showing a filesystem drawer at the bottom](screenshots/drawer-open.png)
+
 ## Installation
 
-> [!NOTE]
-> Once the plugin is available on the [Asset Library](https://godotengine.org/asset-library/), installation will be a bit simpler.
+### From GitHub Releases
 
 - Download the [latest release](https://github.com/jakobbouchard/godot-filesystem-drawer/releases/latest)
 - Extract the `addons` folder into your project
 - Open the **Project Settings** (`Project → Project Settings...`) and go to the **Plugins** tab
 - Enable **FileSystem Drawer**
 
+### From Asset Library
+
+- Open the **Asset Library** tab in your editor
+- Search for `FileSystemDrawer` and download it
+- Open the **Project Settings** (`Project → Project Settings...`) and go to the **Plugins** tab
+- Enable **FileSystem Drawer**
+
 ## Settings
 
-There are currently no dedicated settings menu, but by going into the `Project → Tools` menu, you can toggle between having the FileSystem at the bottom, or in the regular dock slots. This preference is then saved so that it doesn't get auto-docked on next startup. The settings file is global, and is saved alongside the Godot editor's own preference files, so it persists across projects.
+Open your **Editor Settings** (`Editor → Editor Settings...`) and scroll down to **Plugins → FileSystem Drawer**. You will be able to choose between having the drawer enabled or not (for example when working with multiple people in a project). You can also change the `Shortcut` resource that is associated with the plugin. Currently, Godot has no way for plugins to register shorcuts in the **Shortcuts** tab, so this is the workaround, [as noted here](https://github.com/godotengine/godot-proposals/issues/2024#issuecomment-1378782833).
+
+![godot editor settings, showing the plugin's settings](screenshots/plugin-settings.png)

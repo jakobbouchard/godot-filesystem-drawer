@@ -1,7 +1,10 @@
-[gd_resource type="InputEventKey" format=3 uid="uid://bafyb8y38ahfh"]
+[gd_resource type="Shortcut" load_steps=2 format=3 uid="uid://coupup08gdvj"]
 
-[resource]
+[sub_resource type="InputEventKey" id="InputEventKey_4g04k"]
 device = -1
 ctrl_pressed = true
 physical_keycode = 32
 unicode = 32
+
+[resource]
+events = [SubResource("InputEventKey_4g04k")]
