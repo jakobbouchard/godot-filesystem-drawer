@@ -1,5 +1,8 @@
 # Godot FileSystem Drawer
 
+> [!WARNING]
+> This plugin is not necessary since the release of [Godot 4.3](https://godotengine.org/releases/4.3/#editor-filesystem-moved-bottom-screen), as it's now a [native feature](https://github.com/godotengine/godot/pull/86765). I will no longer update this plugin.
+
 A simple plugin for the Godot editor that moves the **FileSystem** dock to the bottom of the editor, similar to Unreal Engine's Asset Drawer. Click on the **FileSystem** button at the bottom of the window or use <kbd>Ctrl</kbd>+<kbd>Space</kbd> to open it. Inspired by [@newjoker6's plugin](https://github.com/newjoker6/Asset-Drawer/).
 
 ![godot editor, showing a filesystem drawer at the bottom](screenshots/drawer-open.png)
